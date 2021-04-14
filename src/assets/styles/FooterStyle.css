@@ -1,0 +1,150 @@
+.HushPuppie{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(231, 230, 226);
+    color: rgb(87, 86, 86);
+}
+
+
+.facebook{
+    padding-right: 2px;
+}
+
+.title4{
+    font-family: 'glyphicons';
+    font-size: 34px;
+    margin-top: 10px;
+}
+
+.lineaFooter{
+    height: 1px;
+    width: 14%;
+    background-color: rgb(86, 86, 85);
+    margin-top: -17px;
+    margin-bottom: 0;
+}
+
+.icons{
+    padding-top: 8px;
+    padding-bottom: 17px;
+}
+
+.principal{
+    display: grid;
+    grid-gap: 0px 0px;
+    grid-template-columns: repeat(4,1fr);
+}
+
+
+
+.servicioCliente{
+    text-align: left;
+}
+
+.miCuenta{
+    text-align: left;
+
+}
+
+.recursos{
+    text-align: left;
+}
+
+.containerFooter {
+    /* border: 1px solid red; */
+    max-width: 1200px;
+    flex: 1;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}
+
+.servicioCliente li{
+    padding-bottom: 6px;
+}
+
+
+.servicioCliente a{
+    align-items: left;
+    height: inherit;
+    text-decoration: none;
+}
+
+.miCuenta li{
+    padding-bottom: 6px;
+}
+.miCuenta a{
+    align-items: left;
+    height: inherit;
+    text-decoration: none;
+}
+
+.recursos li{
+    padding-bottom: 6px;
+}
+
+.recursos a{
+    align-items: left;
+    height: inherit;
+    text-decoration: none;
+    
+}
+
+.link3{
+    color: rgb(81, 81, 81);
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 12px; 
+}
+
+.titleNewSletter{
+    color: rgb(81, 81, 81);
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.titleConatinerFooter{
+    color: rgb(51, 51, 51);
+    font-family: 'glyphicons';
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.selectedEmail{
+    padding: 10px 10px;
+    padding-right: 182px;
+    font-family: "montserrat1-regular" ;
+    color: #676767;
+    border: 1px solid #aaa;
+    font-size: 12px;
+}
+
+.selectedEmail:focus {
+    border: 1px solid #aaa;
+    box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+    box-shadow: 0 0 0 3px -moz-mac-focusring;
+    color: #676767;
+    outline: none;
+  }
+  
+  .lineaFooter2{
+
+    border-color: 1px solid rgb(200, 198, 203);
+    margin-top: 30px;
+
+}
+
+.containerFooterImg{
+    max-width: 1000px;
+    flex: 1;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}

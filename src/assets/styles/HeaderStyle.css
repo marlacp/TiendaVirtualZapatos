@@ -1,0 +1,129 @@
+.hotSale {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(122, 74, 88);
+    color: white;
+  }
+
+  .title1{
+      font-family: "montserrat1-regular" ;
+      font-size: 18px;
+  }
+
+
+.descrip1 ol{
+    display: flex;
+    height: inherit;
+    background-color: rgb(200, 198, 203);
+    padding-left: 930px;
+}
+
+.descrip1 a{
+    display: flex;
+    align-items: right;
+    height: inherit;
+    text-decoration: none;
+    padding: 8px 5px;
+    
+}
+
+.link{
+    color: #676767;
+    font-family: 'montserrat2-bold';
+    font-size: 11px; 
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+
+}
+
+.descrip2{
+    display: flex;
+    height: inherit;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.select-info{
+
+    height: inherit;
+    text-align: right;
+    padding: 10px 0;
+}
+
+
+.title2{
+    color: rgb(131, 86, 99);
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 14px;
+    /* font-weight: 550; */
+}
+
+.selectedBuscar{
+    padding: 10px 10px;
+    padding-right: 145px;
+    font-family: "montserrat1-regular" ;
+    color: #676767;
+    border: 1px solid #aaa;
+    font-size: 12px;
+}
+
+.selectedBuscar:focus {
+    border: 1px solid #aaa;
+    box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+    box-shadow: 0 0 0 3px -moz-mac-focusring;
+    color: #676767;
+    outline: none;
+  }
+  
+  .tagsycar{
+    display: flex;
+    height: inherit;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: -19px;
+    
+}
+
+.tagsycar ol{
+    display: flex;
+    height: inherit;
+}
+
+.tagsycar a{
+    display: flex;
+    align-items: left;
+    height: inherit;
+    text-decoration: none;
+    padding: 13px 17px;
+    
+}
+
+.link2{
+    color: rgb(102, 102, 102);
+    font-family: 'glyphicons';
+    font-size: 15px; 
+    font-weight: 600;
+    /* margin: 0; */
+    
+
+}
+
+.carrito{
+    display: flex;
+    height: inherit;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+
+.candado{
+    padding: 15px 5px;
+}
+
+.lineaHeader{
+    border-color: 1px solid rgb(200, 198, 203);
+    margin-top: 12px;
+    
+}

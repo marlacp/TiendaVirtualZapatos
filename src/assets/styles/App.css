@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+
+
+  @font-face {
+    font-family: 'brotherDeluxe';
+    src: local('brotherDeluxe'),
+      url('../Fonts/brother-deluxe-1350-font/brotherDeluxe1350____2011.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'cuttyfruty';
+    src: local('cuttyfruty'),
+      url('../Fonts/cuttyfruty/CuttyFruty.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'glyphicons';
+    src: local('glyphicons'),
+      url('../Fonts/fonts-2/glyphicons-halflings-regular.ttf') format('truetype'),
+      url('../Fonts/fonts-2/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+      url('../Fonts/fonts-2/glyphicons-halflings-regular.svg') format('svg'),
+      url('../Fonts/fonts-2/glyphicons-halflings-regular.woff') format('woff'),
+      url('../Fonts/fonts-2/glyphicons-halflings-regular.woff2') format('woff2');
+  }
+
+  @font-face {
+    font-family: 'montserrat-bold';
+    src: local('montserrat-bold'),
+      url('../Fonts/montserrat/Montserrat-Bold.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'montserrat-regular';
+    src: local('montserrat-regular'),
+      url('../Fonts/montserrat/Montserrat-Regular.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'montserrat1-bold';
+    src: local('montserrat1-bold'),
+      url('../Fonts/montserrat1/Montserrat-Bold.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'montserrat1-regular';
+    src: local('montserrat1-regular'),
+      url('../Fonts/montserrat1/Montserrat-Regular.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'montserrat2-bold';
+    src: local('montserrat2-bold'),
+      url('../Fonts/montserrat2/Montserrat-Bold.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'montserrat2-regular';
+    src: local('montserrat2-regular'),
+      url('../Fonts/montserrat2/Montserrat-Regular.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'nashville';
+    src: local('nashville'),
+      url('../Fonts/nashville/NASHVILL.TTF') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'RadiantAntique';
+    src: local('RadiantAntique'),
+      url('../Fonts/RadiantAntique.ttf') format('truetype');
+  }
+
+  .container {
+    /* border: 1px solid red; */
+    max-width: 1100px;
+    flex: 1;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+  }
+
+
+  ol,
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+

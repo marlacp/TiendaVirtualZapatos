@@ -1,0 +1,94 @@
+.CompletaLook{
+    background-color: rgb(231, 230, 226);
+}
+
+.titleLook{
+    color: rgb(51, 51, 51);
+    font-family: 'glyphicons';
+    font-size: 22px;
+    font-weight: 600;
+    word-spacing: -16px;
+    padding: 3px 4px;
+    margin-top: 37px;
+}
+
+.titleRecomend{
+    color: rgb(102, 102, 102);
+    font-family: 'glyphicons';
+    font-size: 21px;
+    font-weight: 600;
+    word-spacing: -16px;
+}
+
+.LookImg{
+    display: flex;
+    height: inherit;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.PorductLook{
+    padding: 0 0;
+    margin: 0 30px;
+    margin-top: -15px;
+}
+
+.PorductRecom{
+    padding: 0 0;
+    margin: 0 30px;
+
+}
+
+.imgButton{
+    width: 200px;
+    height: 131px;
+}
+
+.buttonLook{
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    border: 1px solid #FFFFFF;
+    cursor: pointer;
+    outline:0;
+}
+
+.titlenompreProd{
+    font-family: 'montserrat-regular';
+    font-size: 15px;
+    color: rgb(51, 51, 51);
+    text-align: center;
+}
+
+.priceTitleProd{
+    font-family: 'montserrat-regular';
+    font-size: 20px;
+    color: rgb(122, 74, 88);
+    text-align: center;
+}
+
+.ButtonAgregarCar{
+    background-color: rgb(122, 74, 88);
+    border: 2px solid rgb(122, 74, 88);
+    color: white;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    padding: 16px;
+    outline: 0;
+}
+
+.price{
+    margin-top: 31px;
+}
+
+.agregarCar{
+    margin-top: -3px;
+}
+
+.ProductosR{
+    padding: 0;
+    margin-top: 42px;
+    margin-bottom: 29px;
+}
