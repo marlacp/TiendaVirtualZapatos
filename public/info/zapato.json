@@ -4,57 +4,57 @@
     "precio": 5000,
     "referencia": "G40",
     "seccion":"completa-look",
-    "tipo":[{"color":"azul","fotos": ["1AZ-ORION.png", "2AZ-ORION.png", "3AZ-ORION.png"]}]
+    "tipo":[{ "id":"1","color":"azul","fotos": ["1AZ-ORION.png", "2AZ-ORION.png", "3AZ-ORION.png"]}]
 }, {
     "id": "2",
     "nombre": "Zapatillas Perch",
     "precio": 5000,
     "referencia": "G40",
     "seccion":"completa-look",
-    "tipo":[{"color":"azul","fotos": ["1AZ-PERCH.png", "2AZ-PERCH.png", "3AZ-PERCH.png"]},
-            {"color":"camel","fotos": ["1CA-PERCH.png", "2CA-PERCH.png", "3CA-PERCH.png"]}]
+    "tipo":[{"id":"1","color":"azul","fotos": ["1AZ-PERCH.png", "2AZ-PERCH.png", "3AZ-PERCH.png"]},
+            {"id":"2","color":"camel","fotos": ["1CA-PERCH.png", "2CA-PERCH.png", "3CA-PERCH.png"]}]
 },{
     "id": "3",
     "nombre": "Zapatillas Cansas",
     "precio": 5000,
     "referencia": "G40",
     "seccion":"completa-look",
-    "tipo":[{"color":"brown","fotos": ["1BR-CANSAS.png", "2BR-CANSAS.png", "3BR-CANSAS.png", "4BR-CANSAS.png"]}]
+    "tipo":[{"id":"1","color":"brown","fotos": ["1BR-CANSAS.png", "2BR-CANSAS.png", "3BR-CANSAS.png", "4BR-CANSAS.png"]}]
 }, {
     "id": "4",
     "nombre": "Zapatillas Hasse",
     "precio": 5000,
     "referencia": "G40",
     "seccion":"completa-look",
-    "tipo":[{"color":"brown","fotos": ["1BR-HESSE.png", "2BR-CANSAS.png", "3BR-CANSAS.png", "4BR-CANSAS.png"]}]
+    "tipo":[{"id":"1","color":"brown","fotos": ["1BR-HESSE.png", "2BR-HESSE.png", "3BR-HESSE.png", "4BR-HESSE.png"]}]
 }, {
     "id": "5",
-    "nombre": "SANDALIAS Stam",
+    "nombre": "Sandalias Stam",
     "precio": 5000,
     "referencia": "G40",
     "seccion":"recomendados",
-    "tipo":[{"color":"brown","fotos": ["1BR-STAM.png", "2BR-STAM.png", "3BR-STAM.png", "4BR-STAM.png"]}]
+    "tipo":[{"id":"1","color":"brown","fotos": ["1BR-STAM.png", "2BR-STAM.png", "3BR-STAM.png", "4BR-STAM.png"]}]
 }, {
     "id": "6",
     "nombre": "Zapatillas Iowa",
     "precio": 5000,
     "referencia": "G40",
     "seccion":"recomendados",
-    "tipo":[{"color":"brown","fotos": ["1C-IOWA.png", "2C-IOWA.png", "3C-IOWA.png", "4C-IOWA.png"]},
-            {"color":"negro","fotos": ["1N-IOWA.png", "2N-IOWA.png", "3N-IOWA.png"]}]
+    "tipo":[{"id":"1","color":"brown","fotos": ["1C-IOWA.png", "2C-IOWA.png", "3C-IOWA.png", "4C-IOWA.png"]},
+            {"id":"2","color":"negro","fotos": ["1N-IOWA.png", "2N-IOWA.png", "3N-IOWA.png"]}]
 }, {
     "id": "7",
     "nombre": "Zapatillas Owa",
     "precio": 5000,
     "referencia": "G40",
     "seccion":"recomendados",
-    "tipo":[{"color":"oliva","fotos": ["1OL-COOPER.png", "2OL-COOPER.png", "3OL-COOPER.png"]}]
+    "tipo":[{"id":"1", "color":"oliva","fotos": ["1OL-COOPER.png", "2OL-COOPER.png", "3OL-COOPER.png"]}]
 }, {
     "id": "8",
     "nombre": "Zapatillas Duran",
     "precio": 5000,
     "referencia": "G40",
     "seccion":"recomendados",
-    "tipo":[{"color":"verde","fotos": ["1V-DURAN.png", "2V-DURAN.png", "3V-DURAN.png"]}]
+    "tipo":[{"id":"1", "color":"verde","fotos": ["1V-DURAN.png", "2V-DURAN.png", "3V-DURAN.png"]}]
 }
 ]

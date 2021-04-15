@@ -66,12 +66,7 @@ export const Footer = () => (
                 <div className="newsLetter">
                     <p className="titleConatinerFooter">NEWSLETTER</p>
                     <p className="titleNewSletter">Regístrate para ser el primero en recibir nuestras noticias</p>
-
-                    <select name="select" className="selectedEmail">
-                        <option value="buscar" selected>E-MAIL</option>
-                        <option value="value1" >Value 1</option>
-                        <option value="value1">Value 2</option>
-                    </select>
+                    <input className="selectedEmail" placeholder="E-MAIL" type="text"/>
                 </div>
             </div>
         </div>

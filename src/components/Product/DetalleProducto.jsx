@@ -1,3 +1,4 @@
+/* eslint-disable array-callback-return */
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, {useState, useEffect } from 'react';
 import { connect } from 'react-redux';
@@ -13,15 +14,44 @@ const DetalleProduct = (props) => {
         seccion: null,
         tipo:[]
     });
+
+    const [tipoImg, setTipoImg] = useState(
+        {
+        id: null,
+        color: null,
+        fotos: []
+
+        }
+    );
+
+    const [bigImageC, setBigImageC] = useState(0);
+
+    const [imgPrincipal, setImgPrincipal] = useState([]);
+
     useEffect(()=>{
-        console.log(props.identificador, "este viene de product");
+        // console.log(props.identificador, "este viene de product");
         // eslint-disable-next-line array-callback-return
+        let tipo = [];
         props.productos.map((index) => {
             if (index.id === props.identificador){
                 setProduct(index);
+                index.tipo.map((item) => {
+                    if (index.length !== null && index.id === props.identificador){
+                        tipo.push(item)
+                    }
+                });
+                setTipoImg(tipo);
+                setImgPrincipal(tipo[0].fotos);
+                setBigImageC(0);
             }
         });
+
     },[props.identificador])
+
+
+    console.log(imgPrincipal)
+            
+        
 
 	return (
         <div className="container">
@@ -32,48 +62,38 @@ const DetalleProduct = (props) => {
                         <p className="CarrilTitle">HUSHPUPPIESCO / CALZADO / {product.nombre}</p>
                     </div>
 
+
                     <div className="BigImg">
-                        {product.tipo.length > 0? <img className="Big" src={`/images/${ product.tipo[0].fotos[0] }` } alt={product.tipo[0].fotos[0]} />:null }
-                    </div>
-                    {/* map para leer imagenes */}
-                    <div className={`SmallImg${1}`}>
-                    <button className="buttonImage">
-                        {/* <img className="Img1" src={`/images/${ props.productos[0].foto }` } alt={props.productos[0].foto} /> */}
-
-                    </button>
+                        {imgPrincipal.length > 0? <img className="Big" src={`/images/${imgPrincipal[bigImageC] }` } alt={imgPrincipal[bigImageC]} />:null }
                     </div>
 
-                    <div className={`SmallImg${2}`}>
-                    <button className="buttonImage">
+                    {imgPrincipal.map((index, key)=> (
 
-                        {/* <img className="Img2" src={`/images/${ props.productos[0].foto }` } alt={props.productos[0].foto} /> */}
-                    </button>
+                    <div key={key} className={`SmallImg`}>
+                        <button className="buttonImage" onClick={()=>{setBigImageC(key)}}>
+                            <img className="Img" src={`/images/${ index }` } alt={index} />
+                        </button>
                     </div>
+                    ))}
 
-                    <div className="SmallImg3">
-                    {/* <img className="Img3" src={`/images/${ props.productos[0].foto }` } alt={props.productos[0].foto} /> */}
-                    </div>
 
-                    <div className="SmallImg4">
-                    {/* <img className="Img4" src={`/images/${ props.productos[0].foto }` } alt={props.productos[0].foto} /> */}
-                    </div>
+
                 </div>
-
+                
+        {tipoImg.length >0 && (
                 <div className="container-compra">
 
                     <div className="nombreProd"><p className="titleProd">{product.nombre}</p></div>
                     <div className="priceProd"><p className="priceCompra">${product.precio}</p></div>
                     <div className="codProd"><p className="codProductTitle">Cod. de producto {product.referencia}</p></div>
                     <div className="colorProd"><p className="titleinfo">COLOR</p></div>
-                    <div className="colorImg">
-                        {/* <img className="Img5" src={`/images/${ props.productos[0].foto }` } alt={props.productos[0].foto} /> */}
-                    </div>
-                    <div className="colorImg2">
-                        {/* <img className="Img6" src={`/images/${ props.productos[0].foto }` } alt={props.productos[0].foto} /> */}
-                    </div>
-                    <div className="colorImg3">
-                        {/* <img className="Img7" src={`/images/${ props.productos[0].foto }` } alt={props.productos[0].foto} /> */}
-                    </div>
+                    {tipoImg.map((value, index)=>(
+                        <div key={index} className={`colorImg${index}`} onClick={() => {setImgPrincipal(value.fotos);}}>
+                            <button className="ButtonColorCarril">
+                                <img className="Img5" src={`/images/${ value.fotos[0] }` } alt={value.fotos[0]} />
+                            </button>
+                        </div>
+                    ))}
                     <div className="tallaProd"><p className="titleinfo">TALLA</p></div>
                     <div className="talla5"> <button className="buttonTalla"><p className="tallaB">5</p></button></div>
                     <div className="talla55"> <button className="buttonTalla"><p className="tallaB">5.5</p></button></div>
@@ -89,7 +109,7 @@ const DetalleProduct = (props) => {
                     <div className="añadir"><button className="buttonAdd"><p className="titleAdd">AÑADIR AL CARRITO</p></button></div>
                     <div className="corazon heart icon"></div>
                 </div>
-
+            )}
 
             </div>
 

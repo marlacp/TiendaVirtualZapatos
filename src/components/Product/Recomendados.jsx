@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const Recomendados = (props) => {
 
-    console.log('productos', props.productos[0])
+    // console.log('productos', props.productos[0])
 	return (
         
     <div className="container">
@@ -26,7 +26,7 @@ const Recomendados = (props) => {
                             // eslint-disable-next-line array-callback-return
                             // eslint-disable-next-line no-unused-expressions
                             // eslint-disable-next-line no-lone-blocks
-                            console.log('tipo' ,index.tipo.length > 1 ? index.tipo  : "nada");
+                            {/* console.log('tipo' ,index.tipo.length > 1 ? index.tipo  : "nada"); */}
                             return(
                                 <div className="PorductLook" key={key}>
                                     <div className="LookButtons">
@@ -38,10 +38,6 @@ const Recomendados = (props) => {
                                         </Link>
                                     </div>
                                     <div>
-                                        {/* {
-                                            index.tipo.length > 1 ? <img src={`/images/${index.tipo[0].fotos[0]}` } alt={index.tipo[0].fotos[0]} /> : <img src={`/images/${index.tipo[0].fotos[0]}` } alt={index.tipo[0].fotos[0]} />
-                                        }
-                                        */}
                                     </div>
                                     <div className="nombreProdLook">
                                         <p className="titlenompreProd">{index.nombre}</p>
@@ -92,10 +88,6 @@ const Recomendados = (props) => {
                                         </Link>
                                     </div>
                                     <div>
-                                        {/* {
-                                            index.tipo.length > 1 ? <img src={`/images/${index.tipo[0].fotos[0]}` } alt={index.tipo[0].fotos[0]} /> : <img src={`/images/${index.tipo[0].fotos[0]}` } alt={index.tipo[0].fotos[0]} />
-                                        }
-                                        */}
                                     </div>
                                     <div className="nombreProdLook">
                                         <p className="titlenompreProd">{index.nombre}</p>

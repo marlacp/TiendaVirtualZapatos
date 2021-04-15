@@ -29,12 +29,15 @@ export const Header = () => (
                 </div>
 
                 <div className="select-info">
-                
-                    <select defaultValue={'DEFAULT'} className="selectedBuscar">
-                        <option value="DEFAULT" >BUSCAR</option>
-                        <option value="1" >Value 1</option>
-                        <option value="2">Value 2</option>
-                    </select>
+                    <span>
+
+                        <input 
+                            className="selectedBuscar" 
+                            type="text"
+                            placeholder="BUSCAR"
+                        />
+                    </span>
+
 
                     <p className="title2">
                         ENVÍO GRATIS PARA PEDIDOS SUPERIORES A $300.000

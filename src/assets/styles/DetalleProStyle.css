@@ -3,10 +3,9 @@
     display: grid;
     width: 100%;
     /* margin-top: 8px; */
-    grid-template: 60px 415px 92px/ repeat(4,1fr);
+    grid-template: 60px 415px / repeat(4,140px);
     grid-template-areas: "titleCarrilImg titleCarrilImg titleCarrilImg titleCarrilImg"
-                         "BigImg BigImg BigImg BigImg"
-                         "SmallImg1 SmallImg2 SmallImg3 SmallImg4";
+                         "BigImg BigImg BigImg BigImg";
     grid-gap: 4px 4px;
 
 }
@@ -18,10 +17,10 @@
 
 .BigImg{
     grid-area: BigImg;
-    border: 1px solid rgb(149, 152, 154);
+    border-bottom: 1px solid rgb(149, 152, 154);
 }
 
-.SmallImg1{
+/* .SmallImg1{
     grid-area: SmallImg1;
     border: 1px solid rgb(149, 152, 154);
 }
@@ -37,7 +36,7 @@
 .SmallImg4{
     grid-area: SmallImg4;
     border: 1px solid rgb(149, 152, 154);
-}
+} */
 
 .CarrilTitle{
     color: rgb(148, 148, 148);
@@ -60,27 +59,26 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
+    width: 450px;
+    
 }
 
-.SmallImg1{
+.SmallImg{
     background-color: #FFFFFF;
     margin: 0px;
     padding: 0;
     position: relative;
 }
 
-.Img1{
+.Img{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
     height: 100%;
 }
 
-.SmallImg2{
+/* .SmallImg2{
     background-color: #FFFFFF;
     margin: 0px;
     padding: 0;
@@ -126,7 +124,7 @@
     transform: translate(-50%, -50%);
     width: 100%;
     height: 100%;
-}
+} */
 /* ********************************************************************************************** */
 .titleDetail{
     color: rgb(102, 102, 102);
@@ -167,7 +165,7 @@
                          "priceProd priceProd priceProd priceProd priceProd priceProd"
                          "codProd codProd codProd codProd codProd codProd"
                          "colorProd colorProd colorProd colorProd colorProd colorProd"
-                         "colorImg colorImg2 colorImg3 colorImg3 colorImg3 colorImg3"
+                         "colorImg1 colorImg2 colorImg3 colorImg3 colorImg3 colorImg3"
                          "tallaProd tallaProd tallaProd tallaProd tallaProd tallaProd"
                          "talla5 talla55 talla6 talla65 talla7 talla7 "
                          "talla75 talla8 talla85 talla9 talla95 talla95"
@@ -320,6 +318,32 @@
     margin-right: 220px;
 }
 
+.ButtonColorCarril{
+    background-color: #FFFFFF;
+    border: 1px solid rgb(149, 152, 154);
+
+    color: white;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    outline:0;
+    position: relative;
+}
+
+.ButtonColorCarril:active{
+    background-color: #FFFFFF;
+    border: 2px solid rgb(232, 232, 233);
+    transform: translateY(4px);
+}
+
+.buttonTalla:active{
+    background-color: rgb(232, 232, 233);
+    border: 2px solid rgb(232, 232, 233);
+    transform: translateY(4px);
+    color: rgb(140, 140, 141);
+
+}
+
 .buttonAdd{
     background-color: rgb(122, 74, 88);
     border: 2px solid rgb(122, 74, 88);
@@ -429,31 +453,14 @@
 }
 
 .Img5{
-    /* position: absolute; */
-    /* top: 50%;
+    position: absolute;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); */
-    width: 100%;
-    height: 100%;
+    transform: translate(-50%, -50%);
+    width: 48px;
+    height: 40px;
 }
 
-.Img6{
-    /* position: absolute; */
-    /* top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
-    width: 100%;
-    height: 100%;
-}
-
-.Img7{
-    /* position: absolute; */
-    /* top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
-    width: 100%;
-    height: 100%;
-}
 
 .buttonImage{
     background-color: #FFFFFF;
@@ -461,7 +468,7 @@
     height: 100%;
     margin: 0px;
     -webkit-border-radius: 8px 8px 8px 8px;
-    border: 1px solid #EEEFF2;
+    border: 1px solid #FFFFFF;
     cursor: pointer;
     outline:0;
 }
