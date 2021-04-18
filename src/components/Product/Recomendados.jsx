@@ -1,3 +1,4 @@
+/* eslint-disable array-callback-return */
 /* eslint-disable react-hooks/exhaustive-deps */
 import React from 'react';
 import { connect } from 'react-redux';
@@ -6,7 +7,14 @@ import { Link } from 'react-router-dom';
 
 const Recomendados = (props) => {
 
-    // console.log('productos', props.productos[0])
+    // const smallImages = () => {
+
+    //     for( let i = 0; i < ){
+
+    //     }
+
+    // }
+    // console.log('productos',props.productos)
 	return (
         
     <div className="container">
@@ -26,7 +34,9 @@ const Recomendados = (props) => {
                             // eslint-disable-next-line array-callback-return
                             // eslint-disable-next-line no-unused-expressions
                             // eslint-disable-next-line no-lone-blocks
-                            {/* console.log('tipo' ,index.tipo.length > 1 ? index.tipo  : "nada"); */}
+                            {/* console.log('tipo lenght' ,index.tipo.length); */}
+                            // eslint-disable-next-line no-lone-blocks
+                            {/* console.log('tipo de foto' ,index.tipo[1]); */}
                             return(
                                 <div className="PorductLook" key={key}>
                                     <div className="LookButtons">
@@ -37,8 +47,18 @@ const Recomendados = (props) => {
 
                                         </Link>
                                     </div>
-                                    <div>
+
+                                    <div className="colorLook">
+                                        { index.tipo.map((value, llave) => {
+                                            return(
+                                                <div key={llave}>
+                                                    <img className="colorPrdouctlook" src={`/images/${value.fotos[0]}` } alt={value.fotos[0]} />
+                                                </div>
+                                            )
+                                            })
+                                        }
                                     </div>
+
                                     <div className="nombreProdLook">
                                         <p className="titlenompreProd">{index.nombre}</p>
                                     </div>
@@ -67,15 +87,8 @@ const Recomendados = (props) => {
 
            <div className="LookImg">
                 {
-                    // eslint-disable-next-line array-callback-return
-                    
-                    // eslint-disable-next-line array-callback-return
                     props.productos.map((index, key) =>{
                         if (index.seccion === "recomendados"){
-                            // eslint-disable-next-line array-callback-return
-                            // eslint-disable-next-line no-unused-expressions
-                            // eslint-disable-next-line no-lone-blocks
-                            {/* console.log('tipo' ,index.tipo.length > 1 ? index.tipo  : "nada"); */}
                             return(
 
                                 <div className="PorductRecom" key={key}>
@@ -87,8 +100,18 @@ const Recomendados = (props) => {
 
                                         </Link>
                                     </div>
-                                    <div>
+
+                                    <div className="colorLook">
+                                        { index.tipo.map((value, llave) => {
+                                            return(
+                                                <div key={llave}>
+                                                    <img className="colorPrdouctlook" src={`/images/${value.fotos[0]}` } alt={value.fotos[0]} />
+                                                </div>
+                                            )
+                                            })
+                                        }
                                     </div>
+
                                     <div className="nombreProdLook">
                                         <p className="titlenompreProd">{index.nombre}</p>
                                     </div>

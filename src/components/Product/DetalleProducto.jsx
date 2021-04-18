@@ -49,9 +49,8 @@ const DetalleProduct = (props) => {
     },[props.identificador])
 
 
-    console.log(imgPrincipal)
-            
-        
+
+    
 
 	return (
         <div className="container">
