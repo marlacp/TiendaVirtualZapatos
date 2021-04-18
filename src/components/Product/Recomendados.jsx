@@ -7,14 +7,6 @@ import { Link } from 'react-router-dom';
 
 const Recomendados = (props) => {
 
-    // const smallImages = () => {
-
-    //     for( let i = 0; i < ){
-
-    //     }
-
-    // }
-    // console.log('productos',props.productos)
 	return (
         
     <div className="container">
