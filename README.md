@@ -14,5 +14,5 @@ Una vez ejecutado, instalara todas las dependencias, y corres el proyecto con:
 `$ npm start`
 
 
-El proyecto lo desplegue con firebase, y lo encuentras aquí 👉 https://tienda-zapatos-front.web.app/1
+
 
